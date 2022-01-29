@@ -22,4 +22,17 @@ public class bullet : MonoBehaviour
         transform.position = transform.position + moveDirection * speed * Time.deltaTime;
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "wall") 
+        {
+            //wall
+            Destroy(gameObject);
+        }
+        if (col.gameObject.tag == "enemy")
+        {
+            //wall
+            Destroy(col.gameObject);
+        }
+    }
 }
