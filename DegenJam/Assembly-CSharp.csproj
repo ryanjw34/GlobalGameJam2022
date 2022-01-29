@@ -54,9 +54,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\bullet.cs" />
-    <Compile Include="Assets\playerGun.cs" />
-    <Compile Include="Assets\charControl.cs" />
     <Compile Include="Assets\enemy.cs" />
+    <Compile Include="Assets\playerGun.cs" />
+    <Compile Include="Assets\playerSword.cs" />
+    <Compile Include="Assets\charControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

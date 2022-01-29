@@ -9,7 +9,7 @@ public class charControl : MonoBehaviour
     float horizontal;
     float vertical;
 
-    public float runSpeed = 20.0f;
+    public float runSpeed = 12.0f;
     // Start is called before the first frame update
     void Start()
     {

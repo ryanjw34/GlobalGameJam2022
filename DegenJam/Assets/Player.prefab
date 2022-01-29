@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530ac54f75f8368478260706ffe93fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 20
+  runSpeed: 12
 --- !u!61 &-3903605566479258341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,6 +159,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f176fa4f313651488e796451cbb8ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reloadTimer: 2
+  reloadSpeed: 2
+  bulletNum: 1
+  shotTimer: 0.5
+  shotReset: 0.5
   bullet: {fileID: 319611897153970514, guid: 57f9d54fa8002014d9a9df2809c13e6b, type: 3}
 --- !u!61 &4678961907557969465
 BoxCollider2D:
