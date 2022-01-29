@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637790956484751832
+      ticks: 637790959669207068
     m_Hash: 796062142
   m_LockFileStatus:
     m_FilePath: D:/Users/Anthony/Documents/GitHub/GlobalGameJam2022/DegenJam/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637790956484761844
+      ticks: 637790959669207068
     m_Hash: 3658550238
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
