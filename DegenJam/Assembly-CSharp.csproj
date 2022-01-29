@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\bullet.cs" />
     <Compile Include="Assets\charControl.cs" />
     <Compile Include="Assets\playerGun.cs" />
   </ItemGroup>
