@@ -7,6 +7,10 @@ public class bullet : MonoBehaviour
     Vector3 moveDirection;
     float speed = 5;
 
+    private enemy enemy;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +33,6 @@ public class bullet : MonoBehaviour
             //wall
             Destroy(gameObject);
         }
-        if (col.gameObject.tag == "enemy")
-        {
-            //wall
-            Destroy(col.gameObject);
-            Destroy(gameObject);
-        }
+    
     }
 }

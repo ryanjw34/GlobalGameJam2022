@@ -35,6 +35,11 @@ public class charControl : MonoBehaviour
             Debug.Log("ene hit");
            
         }
+        if (collision.tag == "gunUpgrade")
+        {
+            Debug.Log("upgrade");
+        }
+
     }
 
 }

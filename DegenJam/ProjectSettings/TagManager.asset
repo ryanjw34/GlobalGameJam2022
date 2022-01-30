@@ -7,6 +7,9 @@ TagManager:
   - wall
   - player
   - enemy
+  - upgrade
+  - gunUpgrade
+  - bullet
   layers:
   - Default
   - TransparentFX

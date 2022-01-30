@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class playerGun : MonoBehaviour
 {
-    public float reloadTimer = 4f;
-    public float reloadSpeed = 4f;
-
-    public int bulletNum = 2;
-
     public GameObject bullet;
 
     private float nextFire;
-    private float fireRate = 2;
+    public static float fireRate = 2;
 
-    private bool shot = true;
-
-
+    //public int bulletNum = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,28 +19,11 @@ public class playerGun : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-       
-        reloadTimer -= Time.deltaTime;
-
-        if (reloadTimer < 0f)
-        {
-            shot = true;
+    {                   
+        if (Input.GetMouseButtonDown(0))
+        {    
+            Fire();       
         }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-          
-                if (shot==true)
-                {
-                    Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                    reloadTimer = reloadSpeed;
-                    shot = false;
-                }
-            
-         
-            }
-
     }
 
 
