@@ -5,11 +5,12 @@ using UnityEngine;
 public class playerSword : MonoBehaviour
 {
     private bool swordSwinging;
-    public Animation anim;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         swordSwinging = false;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class playerSword : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             swordSwinging = true;
+            anim.SetTrigger("Attack");
         }
     }
 
@@ -32,6 +34,7 @@ public class playerSword : MonoBehaviour
             if (swordSwinging == true)
             {
                 Destroy(col.gameObject);
+                swordSwinging = false;
 
             }
             

@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c981c431c8d9ff5408ea6078f74e57c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!61 &277940511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -703,6 +704,7 @@ GameObject:
   - component: {fileID: 1007395964}
   - component: {fileID: 1007395963}
   - component: {fileID: 1007395962}
+  - component: {fileID: 1007395966}
   m_Layer: 0
   m_Name: sword1
   m_TagString: Untagged
@@ -809,6 +811,19 @@ Transform:
   m_Father: {fileID: 1567839369}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007395966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007395961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c981c431c8d9ff5408ea6078f74e57c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1007395963}
 --- !u!1001 &1063456123
 PrefabInstance:
   m_ObjectHideFlags: 0
