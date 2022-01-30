@@ -14,6 +14,8 @@ public class playerGun : MonoBehaviour
     private float nextFire;
     private float fireRate = 2;
 
+    private bool shot = true;
+
 
 
     // Start is called before the first frame update
@@ -27,19 +29,24 @@ public class playerGun : MonoBehaviour
     {
        
         reloadTimer -= Time.deltaTime;
-        
 
-        if (Input.GetMouseButtonDown(0))
+        if (reloadTimer < 0f)
         {
-            if (reloadTimer < 0f)
-            {
-
-                Fire();
-
-                reloadTimer = reloadSpeed;
-
-            }
+            shot = true;
         }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+          
+                if (shot==true)
+                {
+                    Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                    reloadTimer = reloadSpeed;
+                    shot = false;
+                }
+            
+         
+            }
 
     }
 

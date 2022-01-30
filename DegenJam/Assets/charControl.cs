@@ -27,4 +27,14 @@ public class charControl : MonoBehaviour
     {
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "enemy")
+        {
+            Debug.Log("ene hit");
+           
+        }
+    }
+
 }
