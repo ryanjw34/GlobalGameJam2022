@@ -8,6 +8,9 @@ public class enemy : MonoBehaviour
     public Transform target;//set target from inspector instead of looking in Update
     public float speed = 3f;
     private int hp = 2;
+
+    private GameObject check;
+    private GameObject oldCheck;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,13 +36,13 @@ public class enemy : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "bullet")
+        check = col.gameObject;
+        if (col.gameObject.tag == "bullet" && oldCheck != check)
         {
-            Debug.Log("enemy hit");
-            Destroy(col.gameObject);
-            hp = hp - 1;     
+            oldCheck = check;
+            hp = hp - 1;
         }
     }
 

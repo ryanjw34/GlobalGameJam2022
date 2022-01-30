@@ -5,14 +5,14 @@ using UnityEngine;
 public class gunUpgrade : MonoBehaviour
 {
     private int upgradeNum;
-    public static string upgradeText="";
+    public static string upgradeText = "";
     private GameObject Player;
- 
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("player");
-        upgradeNum =Random.Range(1, 4);
+        upgradeNum = Random.Range(1, 4);
         Debug.Log(upgradeNum);
     }
 
@@ -26,13 +26,13 @@ public class gunUpgrade : MonoBehaviour
             {
                 upgradeText = "Faster Reload Speed";
             }
-            else if(upgradeNum == 2)
+            else if (upgradeNum == 2)
             {
-                upgradeText = "Upgrade 2";
+                upgradeText = "+1 Bullet Pierce";
             }
             else if (upgradeNum == 3)
             {
-                upgradeText = "Upgrade 3";
+                upgradeText = "Bigger Bullets";
             }
         }
 
@@ -45,19 +45,25 @@ public class gunUpgrade : MonoBehaviour
         {
             if (upgradeNum == 1)
             {
-                playerGun.fireRate = playerGun.fireRate - 1;
+                playerGun.fireRate = playerGun.fireRate - .5f;
+                upgradeText = "";
+                Destroy(gameObject);
             }
             else if (upgradeNum == 2)
             {
-                upgradeText = "Upgrade 2";
+                bullet.maxPierce = bullet.maxPierce + 1;
+                upgradeText = "";
+                Destroy(gameObject);
             }
             else if (upgradeNum == 3)
             {
-                upgradeText = "Upgrade 3";
+                bullet.size = bullet.size + .2f;
+                upgradeText = "";
+                Destroy(gameObject);
             }
 
         }
-   
+
 
     }
 
