@@ -8,6 +8,7 @@ public class bullet : MonoBehaviour
     float speed = 5;
 
     private enemy enemy;
+    private int pierce=2;
 
 
 
@@ -22,6 +23,10 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pierce <= 0)
+        {
+            Destroy(gameObject);
+        }
 
         transform.position = transform.position + moveDirection * speed * Time.deltaTime;
     }
@@ -33,6 +38,13 @@ public class bullet : MonoBehaviour
             //wall
             Destroy(gameObject);
         }
-    
+        if (col.gameObject.tag == "enemy")
+        {
+            pierce = pierce - 1;
+        }
+
     }
+
+
+
 }

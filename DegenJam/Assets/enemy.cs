@@ -38,7 +38,6 @@ public class enemy : MonoBehaviour
         if (col.gameObject.tag == "bullet")
         {
             Debug.Log("enemy hit");
-            Destroy(col.gameObject);
             hp = hp - 1;     
         }
     }
