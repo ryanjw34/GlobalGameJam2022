@@ -28,11 +28,11 @@ public class gunUpgrade : MonoBehaviour
             }
             else if(upgradeNum == 2)
             {
-                upgradeText = "Upgrade 2";
+                upgradeText = "+1 Bullet Pierce";
             }
             else if (upgradeNum == 3)
             {
-                upgradeText = "Upgrade 3";
+                upgradeText = "Bigger Bullets";
             }
         }
 
@@ -45,15 +45,18 @@ public class gunUpgrade : MonoBehaviour
         {
             if (upgradeNum == 1)
             {
-                playerGun.fireRate = playerGun.fireRate - 1;
+                playerGun.fireRate = playerGun.fireRate - .5f;
+                Destroy(gameObject);
             }
             else if (upgradeNum == 2)
             {
-                upgradeText = "Upgrade 2";
+                bullet.maxPierce = bullet.maxPierce + 1;
+                Destroy(gameObject);
             }
             else if (upgradeNum == 3)
             {
-                upgradeText = "Upgrade 3";
+                bullet.size = bullet.size + 1;
+                Destroy(gameObject);
             }
 
         }
