@@ -33,6 +33,7 @@ public class bullet : MonoBehaviour
         {
             //wall
             Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 }
