@@ -8,14 +8,14 @@ public class bullet : MonoBehaviour
     float speed = 5;
 
     private enemy enemy;
-    public static int maxPierce=2;
-    private int pierce=2;
+    public static int maxPierce = 2;
+    private int pierce = 2;
 
     private GameObject check;
     private GameObject oldCheck;
 
-    public static Vector3 bulletSize = new Vector3(.5f,.5f,1);
-    public static int size=1;
+    public static Vector3 bulletSize = new Vector3(.0f, .0f, 1);
+    public static float size = .5f;
 
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (pierce <= 0)
         {
             Destroy(gameObject);
@@ -44,14 +44,14 @@ public class bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         check = col.gameObject;
-        if (col.gameObject.tag == "wall") 
+        if (col.gameObject.tag == "wall")
         {
             //wall
             Destroy(gameObject);
         }
-        if (col.gameObject.tag == "enemy" && oldCheck!=check)
+        if (col.gameObject.tag == "enemy" && oldCheck != check)
         {
-           
+
             oldCheck = check;
             pierce = pierce - 1;
         }
@@ -60,3 +60,4 @@ public class bullet : MonoBehaviour
 
 
 }
+

@@ -42,7 +42,7 @@ public class enemy : MonoBehaviour
         if (col.gameObject.tag == "bullet" && oldCheck != check)
         {
             oldCheck = check;
-            hp = hp - 1;     
+            hp = hp - 1;
         }
     }
 
