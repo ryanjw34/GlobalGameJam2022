@@ -50,13 +50,18 @@
      <Compile Include="Assets\EasyMainMenu\Scripts\Main Menu Scripts\MainMenuController.cs" />
      <Compile Include="Assets\bullet.cs" />
      <Compile Include="Assets\camera.cs" />
+     <Compile Include="Assets\enemyBullet.cs" />
      <Compile Include="Assets\enemy.cs" />
+     <Compile Include="Assets\enemyFire.cs" />
      <Compile Include="Assets\enemySpawns.cs" />
      <Compile Include="Assets\playerGun.cs" />
+     <Compile Include="Assets\upgradeSpawn2.cs" />
      <Compile Include="Assets\playerSword.cs" />
      <Compile Include="Assets\charControl.cs" />
      <Compile Include="Assets\gunUpgrade.cs" />
+     <Compile Include="Assets\upgradeSpawn.cs" />
      <Compile Include="Assets\gunUpText.cs" />
+     <Compile Include="Assets\waveText.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
