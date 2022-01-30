@@ -11,6 +11,7 @@ TagManager:
   - gunUpgrade
   - bullet
   - enemyBullet
+  - quit
   layers:
   - Default
   - TransparentFX
