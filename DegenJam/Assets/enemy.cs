@@ -6,7 +6,7 @@ public class enemy : MonoBehaviour
 {
     public GameObject Player;
     public Transform target;//set target from inspector instead of looking in Update
-    public float speed = 3f;
+    private float speed = 3f;
     private int hp = 2;
 
     private GameObject check;
@@ -14,6 +14,7 @@ public class enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = (Random.Range(3, 6));
         Player = GameObject.FindGameObjectWithTag("player");
     }
 
@@ -30,7 +31,8 @@ public class enemy : MonoBehaviour
 
         if (hp <= 0)
         {
-            Destroy(gameObject);
+            enemySpawns.killcount = enemySpawns.killcount+1;
+            Destroy(transform.parent.gameObject);
         }
 
     }

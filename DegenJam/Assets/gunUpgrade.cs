@@ -8,6 +8,8 @@ public class gunUpgrade : MonoBehaviour
     public static string upgradeText = "";
     private GameObject Player;
 
+    public static bool destroyOthers = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,11 @@ public class gunUpgrade : MonoBehaviour
                 upgradeText = "Bigger Bullets";
             }
         }
+        if (destroyOthers == true)
+        {
+            destroyOthers = false;
+            Destroy(gameObject);
+        }
 
     }
 
@@ -47,18 +54,24 @@ public class gunUpgrade : MonoBehaviour
             {
                 playerGun.fireRate = playerGun.fireRate - .5f;
                 upgradeText = "";
+                enemySpawns.pauseSpawn = false;
+                destroyOthers = true;
                 Destroy(gameObject);
             }
             else if (upgradeNum == 2)
             {
                 bullet.maxPierce = bullet.maxPierce + 1;
                 upgradeText = "";
+                enemySpawns.pauseSpawn = false;
+                destroyOthers = true;
                 Destroy(gameObject);
             }
             else if (upgradeNum == 3)
             {
                 bullet.size = bullet.size + .2f;
                 upgradeText = "";
+                enemySpawns.pauseSpawn = false;
+                destroyOthers = true;
                 Destroy(gameObject);
             }
 

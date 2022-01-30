@@ -62,10 +62,13 @@
     <Compile Include="Assets\enemy.cs" />
     <Compile Include="Assets\enemySpawns.cs" />
     <Compile Include="Assets\playerGun.cs" />
+    <Compile Include="Assets\upgradeSpawn2.cs" />
     <Compile Include="Assets\playerSword.cs" />
     <Compile Include="Assets\charControl.cs" />
     <Compile Include="Assets\gunUpgrade.cs" />
+    <Compile Include="Assets\upgradeSpawn.cs" />
     <Compile Include="Assets\gunUpText.cs" />
+    <Compile Include="Assets\waveText.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

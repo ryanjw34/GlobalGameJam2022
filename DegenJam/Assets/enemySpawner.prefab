@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy1: {fileID: 2263291608033333135, guid: 640a65eceb207644bad92171057a7e74, type: 3}
+  waveAmount: 3
 --- !u!50 &1311668997535659980
 Rigidbody2D:
   serializedVersion: 4
