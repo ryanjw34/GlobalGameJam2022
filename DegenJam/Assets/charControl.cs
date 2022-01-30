@@ -8,6 +8,11 @@ public class charControl : MonoBehaviour
 
     float horizontal;
     float vertical;
+    public float dashDistance = 15f;
+    bool isDashing;
+    float doubleTapTime;
+    KeyCode lastKeyCode;
+
 
     public float runSpeed = 12.0f;
     // Start is called before the first frame update
@@ -21,6 +26,11 @@ public class charControl : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        //Left dash
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if(doubleTapTime = Time.time + 0.5f)
+        }
     }
 
     private void FixedUpdate()
