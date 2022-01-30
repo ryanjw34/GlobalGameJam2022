@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab189d27a2369c74798e570138f5d549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy1: {fileID: 2263291608033333135, guid: 640a65eceb207644bad92171057a7e74, type: 3}
+  enemy1: {fileID: 2622180503549250076, guid: 262508ed3f9e5bb4b871a90f13f1394a, type: 3}
 --- !u!50 &1311668997535659980
 Rigidbody2D:
   serializedVersion: 4
