@@ -69,6 +69,8 @@
     <Compile Include="Assets\upgradeSpawn.cs" />
     <Compile Include="Assets\gunUpText.cs" />
     <Compile Include="Assets\waveText.cs" />
+    <Compile Include="Assets\enemyBullet.cs" />
+    <Compile Include="Assets\enemyFire.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -31,8 +31,10 @@ public class enemy : MonoBehaviour
 
         if (hp <= 0)
         {
-            enemySpawns.killcount = enemySpawns.killcount+1;
+            enemySpawns.killcount = enemySpawns.killcount+1;        
             Destroy(transform.parent.gameObject);
+             
+           // Destroy(gameObject);
         }
 
     }

@@ -10,6 +10,7 @@ TagManager:
   - upgrade
   - gunUpgrade
   - bullet
+  - enemyBullet
   layers:
   - Default
   - TransparentFX
