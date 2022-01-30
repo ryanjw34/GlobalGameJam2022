@@ -22,8 +22,6 @@ public class playerSword : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             swordSwinging = true;
-            animation["anim"].wrapMode = WrapMode.Once;
-            animation.Play("anim");
         }
     }
 
