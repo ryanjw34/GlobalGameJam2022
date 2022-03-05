@@ -9,6 +9,8 @@ public class charControl : MonoBehaviour
     float horizontal;
     float vertical;
 
+    public SpriteRenderer sprite;
+
     public float runSpeed = 12.0f;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,15 @@ public class charControl : MonoBehaviour
     private void FixedUpdate()
     {
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+
+        if (horizontal > 0)
+        {
+            sprite.flipX=false;
+        }
+        else if(horizontal < 0)
+        {
+            sprite.flipX = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

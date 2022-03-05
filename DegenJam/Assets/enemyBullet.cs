@@ -40,6 +40,7 @@ public class enemyBullet : MonoBehaviour
         if (col.gameObject.tag == "player")
         {
             Debug.Log("Player Hit");
+            playerHealth.hp = playerHealth.hp - 1;
             Destroy(gameObject);
             oldCheck = check;
         }
