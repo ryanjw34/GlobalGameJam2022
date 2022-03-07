@@ -20,7 +20,7 @@ public class playerHealth : MonoBehaviour
         {
            
             hp = 3;
-            Time.timeScale = 0;
+            SceneManager.LoadScene("GameOver");
 
         }
     }
